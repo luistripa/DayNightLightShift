@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<MenuItems>
+
+    <MenuItem id="menu1">
+        <Name>Turn On</Name>
+        <ConfigUI actionId="turn_on_shift"/>
+    </MenuItem>
+
+    <MenuItem id="menu2">
+        <Name>Turn Off</Name>
+        <ConfigUI actionId="turn_off_shift"/>
+    </MenuItem>
+
+    <MenuItem id="menu3">
+        <Name>Set Shift</Name>
+        <ConfigUI actionId="set_mode"/>
+    </MenuItem>
+</MenuItems>

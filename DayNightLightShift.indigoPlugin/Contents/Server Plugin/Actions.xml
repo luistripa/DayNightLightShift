@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Actions>
+
+
+    <Action id="set_mode" deviceFilter="self.day_night_shift" uiPath="DeviceActions">
+        <Name>Set Shift</Name>
+        <CallbackMethod>set_shift</CallbackMethod>
+        <ConfigUI>
+
+            <Field id="mode" type="menu">
+                <Label>Mode</Label>
+                <List>
+                    <Option value="day">Day</Option>
+                    <Option value="night">Night</Option>
+                </List>
+            </Field>
+        </ConfigUI>
+    </Action>
+
+    <Action id="turn_on_shift" deviceFilter="self.day_night_shift" uiPath="DeviceActions">
+        <Name>Turn On Shift</Name>
+        <CallbackMethod>turn_on_shift</CallbackMethod>
+    </Action>
+
+
+    <Action id="turn_off_shift" deviceFilter="self.day_night_shift" uiPath="DeviceActions">
+        <Name>Turn Off Shift</Name>
+        <CallbackMethod>turn_off_shift</CallbackMethod>
+    </Action>
+</Actions>

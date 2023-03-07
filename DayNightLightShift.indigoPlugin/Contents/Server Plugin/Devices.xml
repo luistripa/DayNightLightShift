@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Devices>
+    <Device id="day_night_shift" type="relay">
+        <Name>Day Night Shift</Name>
+        <States>
+            <State id="mode">
+                <ValueType>
+                    <List>
+                        <Option value="day">Day</Option>
+                        <Option value="night">Night</Option>
+                    </List>
+                </ValueType>
+                <TriggerLabel>Mode Changed</TriggerLabel>
+                <TriggerLabelPrefix>Mode is</TriggerLabelPrefix>
+                <ControlPageLabel>Current Mode</ControlPageLabel>
+                <ControlPageLabelPrefix>Mode is</ControlPageLabelPrefix>
+            </State>
+        </States>
+        <ConfigUI>
+            <Field id="default_mode" type="menu">
+                <Label>Default Mode:</Label>
+                <List>
+                    <Option value="day">Day</Option>
+                    <Option value="night">Night</Option>
+                </List>
+            </Field>
+            <Field id="day_device_id" type="menu">
+                <Label>Device Mode Day:</Label>
+                <List class="indigo.devices" />
+            </Field>
+
+            <Field id="night_device_id" type="menu">
+                <Label>Device Mode Night:</Label>
+                <List class="indigo.devices" />
+            </Field>
+        </ConfigUI>
+    </Device>
+</Devices>
